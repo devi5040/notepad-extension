@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.notepad {
+  width: 25vw;
+  height: 25vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #d3d3d3;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.header-title {
+  height: 10%;
+  width: 100%;
+  background: #d3d3d3;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+
+.notepad-content {
+  width: 100%;
+  height: 68%;
+  outline: none;
+  padding: 0.5rem;
+  border-bottom: 1px solid #d3d3d3;
+}
+
+.btnContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.2rem 1.5rem;
+  border: 0;
+  margin: 0;
+}
+
+.btn {
+  padding: 8px 16px;
+  background: #d3d3d3;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #d3d3d3;
+  opacity: 1;
+}
+
+.notepadHide {
+  opacity: 0.2;
+}
+
+@media (max-width: 1024px) {
+  .notepad {
+    width: 40vw; /* Adjust the notepad width for medium screens */
+    height: 40vw; /* Adjust the notepad height for medium screens */
+  }
+
+  .header-title {
+    font-size: 1rem; /* Adjust font size of header for smaller screens */
+  }
+
+  .notepad-content {
+    font-size: 0.9rem; /* Adjust font size of content */
+  }
+
+  .btn {
+    padding: 6px 12px; /* Adjust button size */
+  }
+}
+
+/* Media Query for small screens (mobile phones) */
+@media (max-width: 768px) {
+  .notepad {
+    width: 60vw; /* Adjust the notepad width for mobile screens */
+    height: 60vw; /* Adjust the notepad height for mobile screens */
+  }
+
+  .header-title {
+    font-size: 0.9rem; /* Adjust font size of header for smaller screens */
+  }
+
+  .notepad-content {
+    font-size: 0.8rem; /* Adjust font size of content */
+  }
+
+  .btn {
+    padding: 5px 10px; /* Adjust button size */
+  }
+}
